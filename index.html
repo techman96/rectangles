@@ -64,8 +64,6 @@
             })
 
 
-            //add group of text with players names
-
             svg.selectAll('text')
                   .data(data)
                   .enter()
@@ -81,7 +79,6 @@
                           return d.player;
                       });
 
-                //append text element
                 svg.selectAll('players')
                   .data(data)
                   .enter()
@@ -93,9 +90,9 @@
                           return 5 + (i *45);
                       })
                       .attr('width', function(d, i) {
-                          return (d.ppg); // Adjust width based on your data
+                          return (d.ppg); 
                       })
-                      .attr('height', 20) // Set a fixed height for the rectangles
+                      .attr('height', 20)
                       .attr('fill', 'green');
 
 
@@ -114,47 +111,7 @@
                     .text(function(d){
                         return d.ppg
 
-                    })
-
-              // Add text with data
-              
-
-                //add x variable
-
-                //add text anchor (end)
-
-                //add y variable
-
-                //add player name
-                
-
-            //add rectangles
-
-                //append rectangles
-
-                //put X variable
-
-                //put Y variable
-
-                //Give a width that reflects points per game (ppg)
-
-                //Give a height of 20
-
-                //Give a fill color to your hearts desire
-
-                
-            //add group of text for the points per game
-
-                //append text element
-                
-
-                //add x variable with margin using the ppg data point
-
-                //add text anchor (start)
-
-                //add y variable
-
-                //add text
+                    })               
 
         });
 
